@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Child Safety & Protection Policy - Amigly | Quantum Arcade Games
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+      }
+
+      .nav {
+        background: white;
+        padding: 1.2rem 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #0d7377;
+        text-decoration: none;
+      }
+
+      .logo-icon {
+        width: 200px; /* Add specific width */
+        height: 40px; /* Add specific height */
+        background: url("./assets/logo.png") no-repeat center center;
+        background-size: contain; /* This will make sure the image fits properly */
+        display: block; /* Ensure it's displayed as a block element */
+      }
+
+      .back-link {
+        color: #0d7377;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #0d7377;
+        border-radius: 25px;
+        transition: all 0.3s;
+      }
+
+      .back-link:hover {
+        background: #0d7377;
+        color: white;
+      }
+
+      .header {
+        /* background: linear-gradient(135deg, #0d7377 0%, #14a085 100%); */
+        background: url("./assets/child_policy.png");
+        color: white;
+        padding: 150px 2rem 80px;
+        text-align: center;
+        background-size: cover;
+        margin-top: 70px;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
+
+      .header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+
+      .header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+      }
+
+      .content-box {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        margin-bottom: 2rem;
+      }
+
+      .commitment-banner {
+        background: linear-gradient(135deg, #e8f5f5 0%, #d4f1f1 100%);
+        padding: 2rem;
+        border-radius: 12px;
+        margin-bottom: 2.5rem;
+        border-left: 5px solid #0d7377;
+      }
+
+      .commitment-banner p {
+        color: #0d7377;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        font-weight: 500;
+      }
+
+      .content-box h2 {
+        color: #0d7377;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 3px solid #0d7377;
+      }
+
+      .content-box h3 {
+        color: #0d7377;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .content-box p {
+        color: #666;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+      }
+
+      .content-box ul {
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        list-style: none;
+      }
+
+      .content-box li {
+        color: #666;
+        margin-bottom: 1rem;
+        line-height: 1.7;
+        padding-left: 2rem;
+        position: relative;
+      }
+
+      .content-box li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #0d7377;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .content-box strong {
+        color: #0d7377;
+      }
+
+      .warning-box {
+        background: #fff3cd;
+        border-left: 5px solid #ffc107;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+      }
+
+      .warning-box p {
+        color: #856404;
+        margin-bottom: 0.5rem;
+      }
+
+      .warning-box strong {
+        color: #856404;
+      }
+
+      .contact-box {
+        background: linear-gradient(135deg, #0d7377 0%, #14a085 100%);
+        padding: 2.5rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+        color: white;
+        text-align: center;
+      }
+
+      .contact-box h3 {
+        color: white;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+      }
+
+      .contact-box p {
+        color: white;
+        margin-bottom: 1rem;
+        opacity: 0.95;
+      }
+
+      .contact-box a {
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 0.75rem 2rem;
+        border-radius: 25px;
+        margin-top: 1rem;
+        transition: all 0.3s;
+      }
+
+      .contact-box a:hover {
+        background: white;
+        color: #0d7377;
+      }
+
+      .icon-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .icon-card {
+        background: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border-left: 4px solid #0d7377;
+      }
+
+      .icon-card h4 {
+        color: #0d7377;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+      }
+
+      .icon-card p {
+        color: #666;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+
+      footer {
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      footer a {
+        color: #14a085;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .content-box {
+          padding: 2rem 1.5rem;
+        }
+
+        .nav-container {
+          /* flex-direction: column; */
+          gap: 1rem;
+        }
+
+        .icon-section {
+          grid-template-columns: 1fr;
+        }
+
+        .back-link {
+          font-size: x-small;
+        }
+
+        .contact-box {
+          padding: 1rem;
+        }
+
+        .contact-box a {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"></div>
+        </a>
+        <a href="./quantum_arcade_landing.html" class="back-link"
+          >← Back to Home</a
+        >
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>Child Safety & Protection Policy</h1>
+      <p>Amigly Mobile Application</p>
+    </header>
+
+    <div class="container">
+      <div class="content-box">
+        <div class="commitment-banner">
+          <p>
+            AMIGLY is committed to maintaining a safe and respectful environment
+            for all users. We strictly prohibit child sexual abuse and
+            exploitation (CSAE) and take strong measures to prevent, detect, and
+            report such activities.
+          </p>
+        </div>
+
+        <h2>Our Standards</h2>
+        <p>
+          AMIGLY operates under a zero-tolerance policy regarding any form of
+          child exploitation or abuse. We are dedicated to creating and
+          maintaining a safe platform for all users.
+        </p>
+
+        <ul>
+          <li>
+            AMIGLY does not allow content that exploits, abuses, or endangers
+            children.
+          </li>
+          <li>
+            Accounts found violating child safety policies are immediately
+            suspended or permanently banned.
+          </li>
+          <li>
+            We actively monitor and investigate reported content and user
+            behavior.
+          </li>
+          <li>
+            All user-generated content is subject to automated and manual review
+            processes.
+          </li>
+          <li>
+            We employ industry-standard safety measures to protect minors using
+            our platform.
+          </li>
+        </ul>
+
+        <div class="warning-box">
+          <p>
+            <strong>Important Notice:</strong> Any attempt to use AMIGLY for
+            illegal activities involving minors will result in immediate account
+            termination and reporting to law enforcement authorities.
+          </p>
+        </div>
+
+        <h2>Reporting & Moderation</h2>
+        <p>
+          We take every report seriously and have established clear procedures
+          to address child safety concerns quickly and effectively.
+        </p>
+
+        <div class="icon-section">
+          <div class="icon-card">
+            <h4>Easy Reporting</h4>
+            <p>
+              Users can report inappropriate content or behavior directly within
+              the app using our in-app reporting tools.
+            </p>
+          </div>
+          <div class="icon-card">
+            <h4>Priority Review</h4>
+            <p>
+              Reports related to child safety are reviewed with the highest
+              priority by our dedicated safety team.
+            </p>
+          </div>
+          <div class="icon-card">
+            <h4>Swift Action</h4>
+            <p>
+              Verified violations result in immediate action, including content
+              removal and account suspension.
+            </p>
+          </div>
+          <div class="icon-card">
+            <h4>Legal Escalation</h4>
+            <p>
+              Serious violations are escalated to appropriate legal authorities
+              and law enforcement agencies when required.
+            </p>
+          </div>
+        </div>
+
+        <h3>How to Report</h3>
+        <ul>
+          <li>
+            Use the "Report" button available on all content within the app
+          </li>
+          <li>Select "Child Safety Concern" as the reason for reporting</li>
+          <li>
+            Provide as much detail as possible to help our team investigate
+          </li>
+          <li>All reports are handled confidentially and anonymously</li>
+        </ul>
+
+        <h2>Our Moderation Process</h2>
+        <p>
+          AMIGLY employs a multi-layered approach to content moderation and
+          child safety:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Automated Detection:</strong> We use advanced technology to
+            detect and prevent inappropriate content before it reaches users.
+          </li>
+          <li>
+            <strong>Human Review:</strong> Our trained moderation team reviews
+            flagged content and reports.
+          </li>
+          <li>
+            <strong>Proactive Monitoring:</strong> We continuously monitor the
+            platform for potential safety concerns.
+          </li>
+          <li>
+            <strong>Regular Audits:</strong> Our safety policies and procedures
+            are regularly reviewed and updated.
+          </li>
+        </ul>
+
+        <h2>Legal Compliance</h2>
+        <p>
+          AMIGLY is fully committed to complying with all applicable child
+          protection laws and regulations, including but not limited to:
+        </p>
+
+        <ul>
+          <li>
+            The Protection of Children from Sexual Offences (POCSO) Act, 2012
+            (India)
+          </li>
+          <li>Information Technology Act, 2000 and related rules (India)</li>
+          <li>International child safety standards and best practices</li>
+          <li>All local, state, and national child protection legislation</li>
+        </ul>
+
+        <h3>Law Enforcement Cooperation</h3>
+        <p>
+          We cooperate fully with law enforcement agencies and national
+          authorities where necessary. This includes:
+        </p>
+
+        <ul>
+          <li>Preserving evidence related to child safety violations</li>
+          <li>
+            Providing information to authorized law enforcement upon valid legal
+            request
+          </li>
+          <li>
+            Reporting confirmed instances of child exploitation to the National
+            Center for Missing & Exploited Children (NCMEC) and appropriate
+            Indian authorities
+          </li>
+          <li>
+            Participating in industry-wide initiatives to combat child
+            exploitation
+          </li>
+        </ul>
+
+        <h2>Prevention & Education</h2>
+        <p>We believe in proactive measures to prevent child safety issues:</p>
+
+        <ul>
+          <li>Clear community guidelines accessible to all users</li>
+          <li>Age-appropriate content controls and restrictions</li>
+          <li>Regular safety reminders and educational content</li>
+          <li>Parental guidance resources and controls</li>
+        </ul>
+
+        <h2>Continuous Improvement</h2>
+        <p>
+          AMIGLY is committed to continuously improving our child safety
+          measures. We regularly:
+        </p>
+
+        <ul>
+          <li>Update our detection and prevention technologies</li>
+          <li>Train our moderation team on the latest safety protocols</li>
+          <li>Review and enhance our policies based on emerging threats</li>
+          <li>Engage with child safety experts and organizations</li>
+        </ul>
+
+        <div class="contact-box">
+          <h3>Contact for Child Safety Concerns</h3>
+          <p>
+            If you have any child safety concerns or need to report a violation,
+            please contact us immediately:
+          </p>
+          <a href="mailto:info@quantumarcade.in">📧 info@quantumarcade.in</a>
+          <p style="margin-top: 1.5rem; font-size: 0.95rem">
+            All child safety reports are treated with the highest priority and
+            confidentiality.
+          </p>
+        </div>
+
+        <div
+          style="
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+          ">
+          <p style="margin-bottom: 0; color: #666; font-size: 0.95rem">
+            <strong>Emergency Situations:</strong> If you believe a child is in
+            immediate danger, please contact your local law enforcement or
+            emergency services immediately before reporting to us.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 Quantum Arcade Games (OPC) Private Limited. All rights
+        reserved.
+      </p>
+      <p>
+        <a href="quantum_arcade_landing.html">Home</a>
+        <a href="privacy_policy_page.html">Privacy Policy</a>
+        <a href="child-safety-policy.html">Child Safety Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>
