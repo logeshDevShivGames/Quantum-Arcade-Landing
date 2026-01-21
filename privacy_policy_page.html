@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Amigly | Quantum Arcade Games</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+          Cantarell, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f8f9fa;
+      }
+
+      .nav {
+        background: white;
+        padding: 1.2rem 2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #0d7377;
+        text-decoration: none;
+      }
+
+      .logo-icon {
+        width: 200px; /* Add specific width */
+        height: 40px; /* Add specific height */
+        background: url("./assets/logo.png") no-repeat center center;
+        background-size: contain; /* This will make sure the image fits properly */
+        display: block; /* Ensure it's displayed as a block element */
+      }
+
+      .back-link {
+        color: #0d7377;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #0d7377;
+        border-radius: 25px;
+        transition: all 0.3s;
+      }
+
+      .back-link:hover {
+        background: #0d7377;
+        color: white;
+      }
+
+      .header {
+        background: url("./assets/privacy_banner.jpg");
+        color: white;
+        padding: 150px 2rem 80px;
+        text-align: center;
+        margin-top: 70px;
+        background-size: cover;
+      }
+
+      .header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+      }
+
+      .header p {
+        font-size: 1.1rem;
+        opacity: 0.95;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+      }
+
+      .content-box {
+        background: white;
+        border-radius: 16px;
+        padding: 3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        margin-bottom: 2rem;
+      }
+
+      .content-box h2 {
+        color: #0d7377;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 3px solid #0d7377;
+      }
+
+      .content-box h3 {
+        color: #0d7377;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .content-box h4 {
+        color: #555;
+        font-size: 1.1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .content-box p {
+        color: #666;
+        margin-bottom: 1rem;
+        line-height: 1.8;
+      }
+
+      .content-box ul {
+        margin-left: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .content-box li {
+        color: #666;
+        margin-bottom: 0.75rem;
+        line-height: 1.7;
+      }
+
+      .content-box strong {
+        color: #0d7377;
+      }
+
+      .last-updated {
+        background: #e8f5f5;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        color: #0d7377;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+
+      .contact-box {
+        background: linear-gradient(135deg, #e8f5f5 0%, #d4f1f1 100%);
+        padding: 2rem;
+        border-radius: 12px;
+        margin-top: 2rem;
+      }
+
+      .contact-box h3 {
+        color: #0d7377;
+        margin-bottom: 1rem;
+      }
+
+      .contact-box p {
+        color: #555;
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-box a {
+        color: #0d7377;
+        font-weight: 600;
+      }
+
+      footer {
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      footer a {
+        color: #14a085;
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        .content-box {
+          padding: 2rem 1.5rem;
+        }
+
+        .nav-container {
+          /* flex-direction: column; */
+          gap: 1rem;
+        }
+
+        /* .back-link {
+          font-size: smaller;
+        }
+
+        .logo-icon {
+          width: 150px;
+        }
+
+        .header {
+          background: url("./assets/privacy_policy_banner.jpg");
+          background-size: cover;
+        }
+        .header h1 {
+          color: #14a085;
+        }
+
+        .header p {
+          color: #0d7377;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="./privacy_policy_page.html" class="logo">
+          <div class="logo-icon"></div>
+          <!-- <span>QUANTUM ARCADE</span> -->
+        </a>
+        <a href="./quantum_arcade_landing.html" class="back-link"
+          >← Back to Home</a
+        >
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>Privacy Policy</h1>
+      <p>Amigly Mobile Application</p>
+    </header>
+
+    <div class="container">
+      <div class="content-box">
+        <div class="last-updated">Last Updated: January 21, 2026</div>
+
+        <p>
+          Quantum Arcade Games (OPC) Private Limited ("we," "our," or "us")
+          operates the Amigly mobile application (the "App"). This Privacy
+          Policy explains how we collect, use, disclose, and safeguard your
+          information when you use our App.
+        </p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Personal Information</h3>
+        <p>
+          When you use Amigly, we may collect the following personal
+          information:
+        </p>
+        <ul>
+          <li>
+            <strong>Google Account Information:</strong> When you sign in using
+            Google, we collect your name, email address, and profile picture as
+            provided by Google.
+          </li>
+          <li>
+            <strong>Device Information:</strong> We collect information about
+            your device, including device model, operating system version,
+            unique device identifiers, and mobile network information.
+          </li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+          <li>
+            <strong>Analytics Data:</strong> We use Firebase Analytics to
+            collect information about how you use the App, including features
+            accessed, time spent, and app performance data.
+          </li>
+          <li>
+            <strong>Usage Data:</strong> Information about your interactions
+            with the App, including pages viewed, buttons clicked, and other
+            usage patterns.
+          </li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the collected information for the following purposes:</p>
+        <ul>
+          <li>To provide, maintain, and improve the App's functionality</li>
+          <li>To authenticate your identity and manage your account</li>
+          <li>
+            To send you push notifications about app updates and relevant
+            information
+          </li>
+          <li>To analyze app usage and improve user experience</li>
+          <li>To diagnose technical problems and maintain security</li>
+          <li>To comply with legal obligations</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        <p>
+          Our App uses the following third-party services that may collect
+          information:
+        </p>
+
+        <h3>Google Sign-In</h3>
+        <p>
+          We use Google Sign-In for authentication. When you sign in, Google's
+          Privacy Policy applies to the information they collect. You can review
+          Google's Privacy Policy at https://policies.google.com/privacy
+        </p>
+
+        <h3>Firebase Services</h3>
+        <p>We use the following Firebase services:</p>
+        <ul>
+          <li>
+            <strong>Firebase Analytics:</strong> Collects anonymous usage
+            statistics and app performance data
+          </li>
+          <li>
+            <strong>Firebase Cloud Messaging:</strong> Enables push
+            notifications to your device
+          </li>
+        </ul>
+        <p>
+          Firebase is operated by Google LLC. You can learn more about how
+          Google uses data at
+          https://policies.google.com/technologies/partner-sites
+        </p>
+
+        <h2>Push Notifications</h2>
+        <p>With your consent, we may send you push notifications to:</p>
+        <ul>
+          <li>Notify you of app updates and new features</li>
+          <li>Send important service announcements</li>
+          <li>Provide relevant information based on your app usage</li>
+        </ul>
+        <p>
+          You can disable push notifications at any time through your device
+          settings.
+        </p>
+
+        <h2>Data Storage and Security</h2>
+        <p>
+          We implement appropriate technical and organizational security
+          measures to protect your personal information against unauthorized
+          access, alteration, disclosure, or destruction. However, no method of
+          transmission over the internet or electronic storage is 100% secure,
+          and we cannot guarantee absolute security.
+        </p>
+        <p>
+          Your data is stored on secure servers provided by Firebase/Google
+          Cloud Platform.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          We retain your personal information only for as long as necessary to
+          fulfill the purposes outlined in this Privacy Policy, unless a longer
+          retention period is required or permitted by law.
+        </p>
+
+        <h2>Your Rights</h2>
+        <p>Depending on your location, you may have the following rights:</p>
+        <ul>
+          <li>
+            <strong>Access:</strong> Request access to the personal information
+            we hold about you
+          </li>
+          <li>
+            <strong>Correction:</strong> Request correction of inaccurate or
+            incomplete data
+          </li>
+          <li>
+            <strong>Deletion:</strong> Request deletion of your personal
+            information
+          </li>
+          <li>
+            <strong>Objection:</strong> Object to our processing of your
+            personal information
+          </li>
+          <li>
+            <strong>Data Portability:</strong> Request transfer of your data to
+            another service
+          </li>
+        </ul>
+        <p>
+          To exercise these rights, please contact us at info@quantumarcade.in
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          Our App is not intended for children under the age of 13. We do not
+          knowingly collect personal information from children under 13. If you
+          are a parent or guardian and believe your child has provided us with
+          personal information, please contact us, and we will delete such
+          information.
+        </p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will notify
+          you of any changes by posting the new Privacy Policy on this page and
+          updating the "Last Updated" date. You are advised to review this
+          Privacy Policy periodically for any changes.
+        </p>
+
+        <h2>International Data Transfers</h2>
+        <p>
+          Your information may be transferred to and maintained on servers
+          located outside of your state, province, country, or other
+          governmental jurisdiction where data protection laws may differ. By
+          using the App, you consent to such transfers.
+        </p>
+
+        <h2>Legal Compliance</h2>
+
+        <h3>GDPR Compliance (European Users)</h3>
+        <p>
+          If you are located in the European Economic Area (EEA), you have
+          certain data protection rights under the General Data Protection
+          Regulation (GDPR):
+        </p>
+        <ul>
+          <li>
+            <strong>Right to Access:</strong> You can request copies of your
+            personal data
+          </li>
+          <li>
+            <strong>Right to Rectification:</strong> You can request correction
+            of inaccurate data
+          </li>
+          <li>
+            <strong>Right to Erasure:</strong> You can request deletion of your
+            data
+          </li>
+          <li>
+            <strong>Right to Restrict Processing:</strong> You can request
+            restriction of data processing
+          </li>
+          <li>
+            <strong>Right to Data Portability:</strong> You can request transfer
+            of your data
+          </li>
+          <li>
+            <strong>Right to Object:</strong> You can object to our processing
+            of your data
+          </li>
+          <li>
+            <strong>Right to Withdraw Consent:</strong> You can withdraw consent
+            at any time
+          </li>
+        </ul>
+
+        <h4>Legal Basis for Processing</h4>
+        <p>We process your data based on:</p>
+        <ul>
+          <li>Your consent (for push notifications and analytics)</li>
+          <li>Contract performance (to provide app services)</li>
+          <li>
+            Legitimate interests (to improve our services and ensure security)
+          </li>
+        </ul>
+
+        <h3>CCPA Compliance (California Users)</h3>
+        <p>
+          If you are a California resident, you have rights under the California
+          Consumer Privacy Act (CCPA):
+        </p>
+        <ul>
+          <li>
+            <strong>Right to Know:</strong> You can request information about
+            the personal data we collect, use, and disclose
+          </li>
+          <li>
+            <strong>Right to Delete:</strong> You can request deletion of your
+            personal data
+          </li>
+          <li>
+            <strong>Right to Opt-Out:</strong> You can opt-out of the sale of
+            personal data (Note: We do not sell personal data)
+          </li>
+          <li>
+            <strong>Right to Non-Discrimination:</strong> You will not be
+            discriminated against for exercising your rights
+          </li>
+        </ul>
+        <p>
+          <strong>California Users:</strong> To exercise these rights, contact
+          us at info@quantumarcade.in with "CCPA Request" in the subject line.
+        </p>
+
+        <h3>Indian Data Protection</h3>
+        <p>
+          We comply with applicable Indian data protection laws, including the
+          Information Technology Act, 2000 and the Information Technology
+          (Reasonable Security Practices and Procedures and Sensitive Personal
+          Data or Information) Rules, 2011.
+        </p>
+
+        <h2>Legal Disclaimer</h2>
+        <p>
+          <strong>IMPORTANT:</strong> This Privacy Policy is provided as a
+          template and should be reviewed by a qualified legal professional
+          before publication. Laws and regulations regarding data privacy vary
+          by jurisdiction and are subject to change. We recommend consulting
+          with a lawyer who specializes in:
+        </p>
+        <ul>
+          <li>Data protection and privacy law (GDPR, CCPA, etc.)</li>
+          <li>Indian Information Technology laws</li>
+          <li>Mobile application compliance</li>
+          <li>International data transfer regulations</li>
+        </ul>
+        <p>
+          Quantum Arcade Games (OPC) Private Limited is committed to maintaining
+          compliance with all applicable privacy laws and regulations.
+        </p>
+
+        <h2>Consent</h2>
+        <p>
+          By using Amigly, you consent to this Privacy Policy and agree to its
+          terms.
+        </p>
+
+        <div class="contact-box">
+          <h3>Contact Us</h3>
+          <p>
+            If you have any questions about this Privacy Policy or our data
+            practices, please contact us:
+          </p>
+          <p><strong>Quantum Arcade Games (OPC) Private Limited</strong></p>
+          <p>
+            Wework Olympia Cyberspace<br />
+            21/22 Alandur Road, 2nd Street<br />
+            Arulayiammanpet, Guindy<br />
+            Chennai, Tamil Nadu 600032<br />
+            India
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@quantumarcade.in">info@quantumarcade.in</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2026 Quantum Arcade Games (OPC) Private Limited. All rights
+        reserved.
+      </p>
+      <p><a href="./quantum_arcade_landing.html">Back to Home</a></p>
+    </footer>
+  </body>
+</html>
